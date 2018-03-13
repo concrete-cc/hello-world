@@ -1,6 +1,6 @@
 # hello-world
 
-This project can be used as a baseline for other API projects. It contains express, jest and a few helpers for logging, monitoring etc.
+This project contains express, jest and a few helpers for logging, monitoring etc.
 
 ## Installing and running
 
