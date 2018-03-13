@@ -1,0 +1,59 @@
+{
+  "name": "hello-world",
+  "version": "0.9.10",
+  "description": "Boilerplate API project",
+  "author": "Concrete ltd.",
+  "license": "ISC",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node ./src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js",
+    "test": "NODE_ENV=test jest -i --forceExit --coverage",
+    "pretest:docker": "docker build --pull -t ${npm_package_name}-test -f Dockerfile.test .",
+    "test:docker": "docker run --rm -e \"SPECIFIC=${SPECIFIC}\" -t ${npm_package_name}-test ",
+    "wait-for-mongo": "wait-for-mongo"
+  },
+  "keywords": [
+    "hello-world"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "anotherlog": "^0.2.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "express-boom": "^2.0.0",
+    "express-openapi": "^1.0.1",
+    "is_js": "^0.9.0",
+    "joi": "^13.0.2",
+    "joi-to-json-schema": "^3.2.0",
+    "lodash": "^4.17.4",
+    "microhealth": "^0.1.1",
+    "moment": "^2.19.2",
+    "morgan": "^1.9.0",
+    "newrelic": "^2.3.2",
+    "node-emoji": "^1.8.1",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "rollbar": "^2.3.1",
+    "semver": "^5.4.1",
+    "url-parse-lax": "^3.0.0",
+    "uuid": "^3.1.0",
+    "x509": "^0.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-config-concrete-base": "^2.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.4.2",
+    "jest-cli": "^22.4.2",
+    "nock": "^9.1.0",
+    "nodemon": "^1.14.0",
+    "sleep-promise": "^2.0.0",
+    "supertest": "^3.0.0"
+  }
+}

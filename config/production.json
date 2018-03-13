@@ -1,0 +1,5 @@
+{
+  "https": {
+    "concreteCustomCertificate": "/usr/local/share/ca-certificates/concrete/concrete.crt"
+  }
+}

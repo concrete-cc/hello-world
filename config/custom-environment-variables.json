@@ -1,0 +1,35 @@
+{
+  "server": {
+    "port": {
+      "__name": "SERVER_PORT",
+      "__format": "json"
+    },
+    "jsonBodyLimit": "SERVER_JSON_BODY_LIMIT",
+    "buildVersion": "BUILD_VERSION"
+  },
+  "performance": {
+    "newrelic": {
+      "agent_enabled": {
+        "__name": "NEW_RELIC_ENABLED",
+        "__format": "json"
+      },
+      "app_name": "NEW_RELIC_APP_NAME",
+      "license_key": "NEW_RELIC_LICENSE_KEY",
+      "logging": {
+        "level": "LOG_LEVEL"
+      }
+    },
+    "rollbar": {
+      "enabled": {
+        "__name": "ROLLBAR_ENABLED",
+        "__format": "json"
+      },
+      "accessToken": "ROLLBAR_LICENSE_KEY",
+      "environment": "ROLLBAR_ENV",
+      "logLevel": "LOG_LEVEL"
+    }
+  },
+  "support": {
+    "email": "SUPPORT_EMAIL"
+  }
+}

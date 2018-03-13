@@ -1,0 +1,16 @@
+node_modules
+npm-debug.log
+newrelic_agent.log
+.idea
+build
+logs
+db
+tmp_uploads/
+.eslintrc-private
+data
+package-lock.json
+.vscode/
+.nyc_output/
+coverage/
+.npm-cache/
+.DS_Store

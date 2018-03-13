@@ -1,0 +1,46 @@
+{
+  "server": {
+    "port": 1339,
+    "buildVersion": "***",
+    "jsonBodyLimit": "10mb"
+  },
+  "logging": {
+    "file": {
+      "level": "info",
+      "filename": "app.log",
+      "dirname": "logs",
+      "maxsize": 20971520,
+      "maxfiles": 5
+    },
+    "console": {
+      "level": "info",
+      "colorize": true
+    },
+    "winston": {
+      "console": {
+        "level": "debug",
+        "colorize": true
+      }
+    }
+  },
+  "performance": {
+    "newrelic": {
+      "agent_enabled": false,
+      "app_name": "X_API",
+      "license_key": "bc13ae366283911e86926a9551534a7065c8dba8",
+      "logging": {
+        "enabled": false,
+        "level": "info"
+      }
+    },
+    "rollbar": {
+      "enabled": false,
+      "accessToken": "7764fac1cd5b4d0daedd3e2d189cab17",
+      "logLevel": "info",
+      "environment": "development"
+    }
+  },
+  "support": {
+    "email": ""
+  }
+}
