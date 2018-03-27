@@ -1,6 +1,6 @@
 # hello-world
 
-This project contains express, jest and a few helpers for logging, monitoring etc.
+This project contains express, jest and a few helpers for logging, monitoring etc. It's been tested to work on Node version 8.
 
 ## Installing and running
 
@@ -9,6 +9,7 @@ nvm use
 yarn install
 yarn lint
 yarn test
+yarn run start
 ```
 
 ## Brief
